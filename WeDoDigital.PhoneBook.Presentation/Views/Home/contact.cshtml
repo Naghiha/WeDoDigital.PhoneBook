@@ -1,0 +1,57 @@
+﻿@model WeDoDigital.PhoneBook.DTO.PhoneBookDTO
+
+<h1> Add / Edit Contact</h1>
+
+    <input id="HidenID" value="@(Model != null ? Model.ID.ToString() : null )" type="hidden" />
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
+        <input type="text" class="form-control" id="FirstName" placeholder="First Name" value="@(Model != null ? Model.FName : "" ) ">
+    </div>
+    <div class="form-group">
+        <label for="LastName">Last Name</label>
+        <input type="text" class="form-control" id="LastName" placeholder="Last Name" value="@(Model != null ? Model.LName : "")">
+    </div>
+    <div class="form-group">
+        <label for="PhoneNumber">Phone Number</label>
+        <input type="text" class="form-control" maxlength="11" id="PhoneNumber" placeholder="Phone Number" value="@(Model != null ? Model.PhoneNumber : "")">
+    </div>
+    <button id="BtnSubmit" class="btn btn-primary">Submit</button>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#BtnSubmit").click(function () {
+
+            debugger
+            var id = $('#HidenID').val();
+            var data = {
+                ID : id,
+                FName: $('#FirstName').val(),
+                LName: $('#LastName').val(),
+                PhoneNumber: $('#PhoneNumber').val()
+            }
+            if (id) {
+                $.ajax({
+                    url: "/Home/update",
+                    data: data,
+                    success: function (result) {
+                        window.location.href = "/Home/Index";
+                    }
+                });
+            }
+            else {
+                $.ajax({
+                    url: "/Home/Insert",
+                    data: data,
+                    success: function (result) {
+                        $('#FirstName').val('');
+                        $('#LastName').val('');
+                        $('#PhoneNumber').val('');
+                    }
+                });
+            }
+        });
+    })
+
+</script>

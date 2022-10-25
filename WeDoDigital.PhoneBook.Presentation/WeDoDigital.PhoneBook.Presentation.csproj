@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeDoDigital.PhoneBook.DataLayer\WeDoDigital.PhoneBook.DataLayer.csproj" />
+    <ProjectReference Include="..\WeDoDigital.PhoneBook.DTO\WeDoDigital.PhoneBook.DTO.csproj" />
+    <ProjectReference Include="..\WeDoDigital.PhoneBook.Interface\WeDoDigital.PhoneBook.Interface.csproj" />
+    <ProjectReference Include="..\WeDoDigital.PhoneBook.Service\WeDoDigital.PhoneBook.Service.csproj" />
+  </ItemGroup>
+
+</Project>

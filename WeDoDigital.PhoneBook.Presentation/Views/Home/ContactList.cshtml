@@ -1,0 +1,25 @@
+﻿@model IEnumerable<WeDoDigital.PhoneBook.DTO.PhoneBookDTO>
+
+<div class="list-group">
+
+
+    @foreach (var item in Model)
+    {
+        
+        <div class="row list-group-item" style="width:80%" >
+            <div class="col-md-6 float-left">
+            
+                <span style="float:left">
+                    <h5> @item.FName  @item.LName</h5>
+                    <br />
+                    <h6>@item.PhoneNumber</h6>
+                </span>
+
+            </div>
+                <button  class="btn float-right btn-danger btnDelete " style="margin:10px" value="@item.ID">Delete</button>
+                <a href="/Home/Contact/@item.ID" class="btn float-right btn-primary " style="margin:10px" >Update</a>
+            
+        </div>
+    }
+
+

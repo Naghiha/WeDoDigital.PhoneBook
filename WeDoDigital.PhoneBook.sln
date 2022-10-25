@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeDoDigital.PhoneBook.Presentation", "WeDoDigital.PhoneBook.Presentation\WeDoDigital.PhoneBook.Presentation.csproj", "{3AAF67EE-70DD-4949-816F-BF499359979A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeDoDigital.PhoneBook.Service", "WeDoDigital.PhoneBook.Service\WeDoDigital.PhoneBook.Service.csproj", "{739ACE3E-6A66-41CC-A50A-1F5C4E2B29FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeDoDigital.PhoneBook.Interface", "WeDoDigital.PhoneBook.Interface\WeDoDigital.PhoneBook.Interface.csproj", "{CD82B79A-6976-4F8A-BDAA-247D70DFA102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeDoDigital.PhoneBook.DataLayer", "WeDoDigital.PhoneBook.DataLayer\WeDoDigital.PhoneBook.DataLayer.csproj", "{8FC234B5-0AC9-41F1-B190-428FD6C1DFF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeDoDigital.PhoneBook.DTO", "WeDoDigital.PhoneBook.DTO\WeDoDigital.PhoneBook.DTO.csproj", "{3D106FA4-FF29-4FDC-A00B-5BDA866B21C1}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WeDoDigital.PhoneBook.DB", "WeDoDigital.PhoneBook.DB\WeDoDigital.PhoneBook.DB.sqlproj", "{B4E44E74-2586-4A8A-A4FE-C63A93D4079E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AAF67EE-70DD-4949-816F-BF499359979A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAF67EE-70DD-4949-816F-BF499359979A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAF67EE-70DD-4949-816F-BF499359979A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAF67EE-70DD-4949-816F-BF499359979A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{739ACE3E-6A66-41CC-A50A-1F5C4E2B29FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739ACE3E-6A66-41CC-A50A-1F5C4E2B29FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739ACE3E-6A66-41CC-A50A-1F5C4E2B29FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739ACE3E-6A66-41CC-A50A-1F5C4E2B29FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD82B79A-6976-4F8A-BDAA-247D70DFA102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD82B79A-6976-4F8A-BDAA-247D70DFA102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD82B79A-6976-4F8A-BDAA-247D70DFA102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD82B79A-6976-4F8A-BDAA-247D70DFA102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC234B5-0AC9-41F1-B190-428FD6C1DFF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC234B5-0AC9-41F1-B190-428FD6C1DFF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC234B5-0AC9-41F1-B190-428FD6C1DFF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC234B5-0AC9-41F1-B190-428FD6C1DFF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D106FA4-FF29-4FDC-A00B-5BDA866B21C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D106FA4-FF29-4FDC-A00B-5BDA866B21C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D106FA4-FF29-4FDC-A00B-5BDA866B21C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D106FA4-FF29-4FDC-A00B-5BDA866B21C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E44E74-2586-4A8A-A4FE-C63A93D4079E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E44E74-2586-4A8A-A4FE-C63A93D4079E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E44E74-2586-4A8A-A4FE-C63A93D4079E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B4E44E74-2586-4A8A-A4FE-C63A93D4079E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E44E74-2586-4A8A-A4FE-C63A93D4079E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E44E74-2586-4A8A-A4FE-C63A93D4079E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FE1A5C3-76C7-4E8A-97A6-6E0FA9FD66BF}
+	EndGlobalSection
+EndGlobal
